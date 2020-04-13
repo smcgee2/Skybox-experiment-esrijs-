@@ -77,12 +77,8 @@
            "type": "equirectangular",
            "showZoomCtrl": false,
            "showFullscreenCtrl": false,
-           "panorama": "https://live.staticflickr.com/1821/28156948207_717d9531a8_6k.jpg", // ADD PANO IMAGE HERE. E.G. SAMPLE BELOW
+           "panorama": "", // ADD IMAGE URL HERE****
            "autoLoad": true,
            "hfov": 100
        });
-
-       // image from
-       //https://www.flickr.com/photos/gdavidson/28156948207/in/photolist-JU8HJg-nT71gf-xQrbue-4Y6eHi-219PyWg-21BxL7Y-28uSJBB-N4KSZA-TjkWhS-m9sMw-27f6A8W-Evj9DT-EB7JY7-24KhwW4-6zEKzq-MrABMX-cJ9Xms-7AEmLt-24NUuA3-JSbPkJ-vSNqrG-s6s6bD-23b6KQX-DmZZVy-68nuJ7-dgQsxW-GNkpH6-d4ax9j-LwMbPd-xqVBEU-bLqXhP-cJXJKJ-Eoj4yU-Q3EzPE-r8bp5e-YDK3LD-FTVPUF-28HDEEX-njjJ3e-Cao6PJ-2foZRYM-KwEzvH-Y7exG8-oGLcWE-Jn5VFM-VP9DhD-XDqBh9-2af2YNZ-ZF2tH4-VAd9H1
-
    });
