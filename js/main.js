@@ -71,7 +71,7 @@
        };
 
        // initiating viewer
-       // https://pannellum.org/documentation
+       // https://pannellum.org/documentation/overview
        var viewer = pannellum.viewer('panorama', {
            "type": "equirectangular",
            "showZoomCtrl": false,
