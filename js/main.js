@@ -2,9 +2,8 @@
        "esri/Map",
        "esri/views/SceneView",
        "esri/layers/SceneLayer",
-       "esri/widgets/Daylight",
-       "esri/widgets/Expand"
-   ], function(Map, SceneView, SceneLayer, Daylight, Expand) {
+       "esri/core/watchUtils"
+   ], function(Map, SceneView, SceneLayer, watchUtils) {
 
        // esri map setup
        const map = new Map({
@@ -51,9 +50,9 @@
        // set position of camera when ready
        window.requestAnimationFrame(update);
 
-       // on drag/move
-       view.on("drag", function(newValue) {
-           window.requestAnimationFrame(update);
+       // on camera update
+       watchUtils.watch(view, "camera", function() {
+           update();
 
            if (view.camera.position.z > 140000) {
                view.environment.background.color = [255, 252, 244, 1];
